@@ -3,5 +3,5 @@ FROM nginx
 COPY wrapper.sh /
 
 COPY html /usr/share/nginx/html
-RUN chmod 777 wrapper.sh /
+RUN chmod +x wrapper.sh /
 CMD ["./wrapper.sh"]
