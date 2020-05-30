@@ -55,7 +55,7 @@ substitutions:
 #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: cloudProject1
     _CONTAINERNAME: cloudProject1  
-    _REPO_NAME: 
+    _REPO_NAME: github_vinodhini-devops_hellowhale
     
     # Developers ONLY change
     _VERSION: v1.0
