@@ -3,9 +3,7 @@ steps:
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone','https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}']
   
-#give permission 
-- name: 'gcr.io/cloud-builders/chmod'
-  args: ['777','*']
+
 #Build the image 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
