@@ -53,8 +53,8 @@ substitutions:
     _GKE_CLUSTER: cluster-1	
 
 #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: cloudProject1
-    _CONTAINERNAME: cloudProject1  
+    _DEPLOYMENTNAME: cloudproject1
+    _CONTAINERNAME: cloudproject1  
     _REPO_NAME: github_vinodhini-devops_hellowhale
     
     # Developers ONLY change
