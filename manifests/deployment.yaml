@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pipe
-        image: gcr.io/nice-gate-272207/pipe:v1
+        image: gcr.io/nice-gate-272207/pipe
         ports:
         - containerPort: 80
