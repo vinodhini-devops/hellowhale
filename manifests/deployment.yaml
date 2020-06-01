@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-app-deployment
+  name: sample-app
+  labels:
+    app: web
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: bonsai-landing
-  replicas: 1
+      app: web
   template:
     metadata:
       labels:
-        app: vino
+        app: web
     spec:
-     containers:
-     - name: sample-app
-       image: gcr.io/nice-gate-272207/test
-       ports:
-       - containerPort: 8080
+      containers:
+      - name: pipe
+        image: gcr.io/nice-gate-272207/pipe:v1
+        ports:
+        - containerPort: 80
